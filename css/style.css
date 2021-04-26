@@ -4,10 +4,11 @@
 */
 
 body {
-    min-width: 1400px;
+    max-width: 1440px;
     height: 100vh;
     font-family: 'Lexend Deca', Arial, sans-serif;
     color: #ffffff;
+    background-color: hsl(0, 0%, 95%);
 }
 
 .container {
@@ -97,4 +98,48 @@ svg {
 .item:nth-child(3) .buttom:hover {
     background-color: #f2f2f2;
     color:hsl(179, 100%, 13%);
+}
+
+@media (min-width:320px) and (max-width:1023px) {
+    main {
+        min-width: 320px;
+    }
+    
+    .container {
+        margin-top: 87px;
+        
+    }
+    
+    .list {
+        flex-direction: column;
+        height: 100%;
+        width: 327px;
+    }
+
+    .item {
+        width: 327px;
+        height: 442px;
+        box-sizing: border-box;
+    }
+
+    svg {
+        padding: 0;
+        margin-top: 48px;
+        height: 50px;
+    }
+
+    .tittle {
+        box-sizing: border-box;
+        margin-top: 28px;
+        margin-bottom: 2px;
+    }
+
+    .descr {
+        width: 225px;
+        margin-top: 22px;
+    }
+
+    .buttom {
+        margin-top: 10px;
+    }
 }
